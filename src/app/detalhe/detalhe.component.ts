@@ -10,13 +10,13 @@ import { Produto } from '../produto';
 })
 export class DetalheComponent implements OnInit {
 
-  private produto: Produto = new Produto();
-  private quantidade = 1;
+  public produto: Produto = new Produto();
+  public quantidade = 1;
 
   constructor(
-    private route: ActivatedRoute,
-    private router: Router,
-    private service: ProdutosService,
+    public route: ActivatedRoute,
+    public router: Router,
+    public service: ProdutosService,
   ) { }
 
   ngOnInit() {

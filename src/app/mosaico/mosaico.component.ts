@@ -13,7 +13,7 @@ export class MosaicoComponent implements OnInit {
   produtos: Produto[];
   categorias: Categoria[];
 
-  constructor(private produtosService: ProdutosService) { }
+  constructor(public produtosService: ProdutosService) { }
 
   ngOnInit() {
     this.getProdutos();

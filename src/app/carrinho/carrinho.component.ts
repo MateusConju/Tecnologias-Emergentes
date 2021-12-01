@@ -11,12 +11,12 @@ import { Router } from '@angular/router';
 })
 export class CarrinhoComponent implements OnInit {
 
-  private carrinho: Carrinho;
+  public carrinho: Carrinho;
 
   constructor(
-    private location: Location,
-    private router: Router,
-    private produtosService: ProdutosService
+    public location: Location,
+    public router: Router,
+    public produtosService: ProdutosService
   ) { }
 
   ngOnInit() {

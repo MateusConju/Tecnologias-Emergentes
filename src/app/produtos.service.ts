@@ -10,12 +10,12 @@ import { Categoria } from './categoria';
 })
 export class ProdutosService {
 
-  private carrinho: Carrinho = new Carrinho();
-  private produtosUrl = 'api/produtos';
-  private categoriasUrl = 'api/categorias';
+  public carrinho: Carrinho = new Carrinho();
+  public produtosUrl = 'api/produtos';
+  public categoriasUrl = 'api/categorias';
 
   constructor(
-    private httpClient: HttpClient
+    public httpClient: HttpClient
   ) { }
 
   getCarrinho(): Carrinho {
