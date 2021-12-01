@@ -1,0 +1,42 @@
+.mosaico {
+    height: 100vh;
+}
+.mosaico__titlebar {
+    display: flex;
+}
+.titlebar__title {
+    background-color: #ff0000;
+    display: inline;
+    padding: 3px 18px;
+    font: 500 20px Calibri;
+    border-top-right-radius: 10px;
+}
+.titlebar__select {
+    font: 500 20px Calibri;
+    margin-right: 10%;
+}
+.titlebar__select option {
+    color: dimgray;
+    font-size: 18px;
+}
+.mosaico__grid {
+    display: grid;
+    grid-template-columns: 180px 180px;
+    grid-template-rows: auto auto;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
+.mosaico__item {
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 5px 10px;
+    font: 500 18px Arial;
+    color: #888888;
+    background-color: white;
+}
+.item__price {
+    font-weight: 600;
+    color: #707070;
+}
