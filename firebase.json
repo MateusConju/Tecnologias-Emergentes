@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/Angularloja",
+    "public": "dist/loja",
     "ignore": [
       "firebase.json",
       "**/.*",
